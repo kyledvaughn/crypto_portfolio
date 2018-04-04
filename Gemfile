@@ -54,7 +54,7 @@ group :development do
 end
 
 group :production do
-    gem 'pg'
+    gem 'pg', '~> 0.21.0'
 #   remnant of ruby 4 gem 'rails_12fator', '~> 0.0.3'
 end
 
