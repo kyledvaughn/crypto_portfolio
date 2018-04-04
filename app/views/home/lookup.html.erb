@@ -1,9 +1,15 @@
-<h3>Crypto Currency Lookup</h3>
+<div class="panel panel-default">
+    
+  <div class="panel-heading">
+      <h3 class="panel-title">Crypto Currency Lookup</h3>
+  </div>
+    
+  <div class="panel-body">
 <br>
 
 <%= form_tag home_lookup_path, :method => 'POST' do %>
-  <%= text_field_tag 'symbol', nil, placeholder: 'Enter Crypto Symbol', size: 50 %>
-  <%= submit_tag 'Lookup Stock Quote' %>
+  <%= text_field_tag 'symbol', nil, placeholder: 'Enter Crypto Symbol', size: 50, class: 'form-control' %>
+  <%= submit_tag 'Lookup Stock Quote', class: 'btn btn-primary' %>
 <% end %>
 
 <br><br>

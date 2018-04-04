@@ -1,8 +1,11 @@
-<% flash.each do |name, message| %>
+<% flash.each do |name, msg| %>
     <div class='alert alert-warning alert-dismissable'>
         <button class='close' data-dismiss='alert'>
             <i class='glyphicon glyphicon-remove-circle'></i>
         </button>
-    <% content_tag(:div, message) %>
+    <%# content_tag(:div, msg) //possible remnant from ruby 4 %>
+        <div>
+            <%= msg %>
+        </div>
     </div>
 <% end %>

@@ -59,3 +59,5 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'jquery-rails'
 
 gem 'devise', '~> 4.4', '>= 4.4.3'
+
+gem 'posgres'
